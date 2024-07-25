@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>About - Healet</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
+  <!-- font awesome style -->
+  <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- header section starts -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="{{ url_for('home') }}">
+          <span>Healet</span>
+        </a>
+        <div class="" id="">
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('about') }}">About</a>
+                <a href="{{ url_for('shop') }}">Shop</a>
+                <a href="{{ url_for('blog') }}">Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- end header section -->
+
+  <!-- about section -->
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="{{ url_for('static', filename='images/about-img.jpg') }}" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>About Us</h2>
+            </div>
+            <p>
+              Healet is a leading jewelry brand offering an exquisite collection of fine jewelry. Our commitment to quality and customer satisfaction sets us apart in the industry.
+            </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
+
+  <!-- jQery -->
+  <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+  <!-- bootstrap js -->
+  <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+  <!-- custom js -->
+  <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</body>
+</html>
